@@ -7,7 +7,7 @@ var plumber = require('gulp-plumber');
 var connect = require('gulp-connect');
 
 gulp.task('jade', function() {
-  return gulp.src('templates/*.jade')
+  gulp.src('templates/*.jade')
     .pipe(plumber())
     .pipe(jade())
     .pipe(gulp.dest('dist'))
@@ -15,7 +15,7 @@ gulp.task('jade', function() {
 });
 
 gulp.task('sass', function() {
-  return gulp.src('sass/main.sass')
+  gulp.src('sass/main.sass')
     .pipe(plumber())
     .pipe(sass({ 
       indentedSyntax: true,
@@ -27,7 +27,7 @@ gulp.task('sass', function() {
 });
 
 gulp.task('compress', function() {
-  return gulp.src('javascript/*.js')
+  gulp.src('javascript/*.js')
     .pipe(uglify())
     .pipe(gulp.dest('dist/javascript'));
 });
