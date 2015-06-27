@@ -1,0 +1,21 @@
+{
+  "name": "starter-kit",
+  "version": "1.0.0",
+  "description": "Gulp starter kit for web applications who use Jade and Sass.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Vercryger",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-connect": "^2.2.0",
+    "gulp-copy": "0.0.2",
+    "gulp-imagemin": "^2.3.0",
+    "gulp-jade": "^1.0.1",
+    "gulp-plumber": "^1.0.1",
+    "gulp-sass": "^2.0.2",
+    "gulp-uglify": "^1.2.0"
+  }
+}
